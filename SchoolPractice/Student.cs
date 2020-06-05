@@ -1,15 +1,21 @@
 ﻿using System;
 
-// Start working here with your Student class.
-// To instantiate the Student class, add your code to the Main method in Program
 
 namespace SchoolPractice
 {
     public class Student
     {
-        private string Name;
-        private int StudentId;
-        private int NumberOfCredits;
-        private double Gpa;
+        public string Name;
+        public int NumberOfCredits;
+        public double Gpa;
+        public int StudentId;
+
+        public Student(string name, int numberOfCredits, double gpa, int studentId)
+        {
+            Name = name;
+            NumberOfCredits = numberOfCredits;
+            Gpa = gpa;
+            StudentId = studentId;
+        }
     }
 }
